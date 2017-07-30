@@ -5,7 +5,7 @@ node_modules/
 logs/pm2logs/*.log
 
 # Build directories
-src/dist/public/
+src/server/dist/public/
 
 # Coverage
 coverage/
