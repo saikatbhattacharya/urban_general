@@ -1,0 +1,46 @@
+{
+  "search.exclude": {
+    "# Library folders": true,
+    "node_modules/": true,
+    "# Logs": true,
+    "logs/pm2logs/*.log": true,
+    "# Build directories": true,
+    "src/dist/public/": true,
+    "# Coverage": true,
+    "coverage/": true,
+    "# Test cache": true,
+    ".nyc_output/": true
+  },
+  "files.exclude": {
+    "# Library folders": true,
+    "node_modules/": true,
+    "# Logs": true,
+    "logs/pm2logs/*.log": true,
+    "# Build directories": true,
+    "src/dist/public/": true,
+    "# Coverage": true,
+    "coverage/": true,
+    "# Test cache": true,
+    ".nyc_output/": true
+  },
+  "[javascript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2
+  },
+  "[sass]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "[scss]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
+  "eslint.enable": true,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false
+}

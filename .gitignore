@@ -1,0 +1,14 @@
+# Library folders
+node_modules/
+
+# Logs
+logs/pm2logs/*.log
+
+# Build directories
+src/dist/public/
+
+# Coverage
+coverage/
+
+# Test cache
+.nyc_output/
