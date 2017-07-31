@@ -12,7 +12,8 @@
     "preserve": "yarn build",
     "serve": "pm2 startOrReload src/server/ecosystem.json",
     "pretest": "rimraf coverage && eslint ./test/unit",
-    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha"
+    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha",
+    "test:watch": "yarn test; chokidar './src/client/**/*.{js,jsx}' './test/unit/**/*.{js,jsx}' -c 'yarn test'"
   },
   "repository": {
     "type": "git"
@@ -41,6 +42,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "chai": "^4.1.0",
+    "chokidar-cli": "^1.2.0",
     "css-loader": "^0.28.4",
     "enzyme": "^2.9.1",
     "es6-promise": "^4.1.1",
