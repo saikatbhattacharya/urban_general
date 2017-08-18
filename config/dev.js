@@ -7,7 +7,7 @@ const baseConfig = require('./base');
 
 const PORT = process.env.PORT || 5000;
 
-const APP_DIR = path.resolve(__dirname, '../src/client/src');
+const APP_DIR = path.resolve(__dirname, '../src/client');
 
 const config = _.merge({
   devServer: {

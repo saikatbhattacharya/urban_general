@@ -5,7 +5,7 @@ const _ = require('lodash');
 const baseConfig = require('./base');
 
 
-const APP_DIR = path.resolve(__dirname, '../src/client/src');
+const APP_DIR = path.resolve(__dirname, '../src/client');
 
 const config = _.merge({
   entry: [
