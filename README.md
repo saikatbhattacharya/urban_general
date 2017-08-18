@@ -66,12 +66,12 @@ Clone this repo either by using HTTPS or SSH
 
 HTTPS:
 ```sh
-$ git clone https://github.com/sadarshannaiynar/covert_lion.git
+$ git clone https://github.com/adarshannaiynar/urban_general.git
 ```
 
 SSH:
 ```sh
-$ git clone git@github.com:sadarshannaiynar/covert_lion.git
+$ git clone git@github.com:adarshannaiynar/urban_general.git
 ```
 
 Open the command line and run the command
