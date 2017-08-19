@@ -4,24 +4,34 @@
     "node_modules/": true,
     "# Logs": true,
     "logs/pm2logs/*.log": true,
+    "logs/*.log": true,
     "# Build directories": true,
     "src/server/dist/public/": true,
     "# Coverage": true,
     "coverage/": true,
+    "# Reports": true,
+    "reports/": true,
     "# Test cache": true,
-    ".nyc_output/": true
+    ".nyc_output/": true,
+    "# Webstorm": true,
+    ".idea/": true
   },
   "files.exclude": {
     "# Library folders": true,
     "node_modules/": true,
     "# Logs": true,
     "logs/pm2logs/*.log": true,
+    "logs/*.log": true,
     "# Build directories": true,
     "src/server/dist/public/": true,
     "# Coverage": true,
     "coverage/": true,
+    "# Reports": true,
+    "reports/": true,
     "# Test cache": true,
-    ".nyc_output/": true
+    ".nyc_output/": true,
+    "# Webstorm": true,
+    ".idea/": true
   },
   "[javascript]": {
     "editor.insertSpaces": true,
