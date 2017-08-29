@@ -19,3 +19,7 @@ reports/
 
 # Webstorm
 .idea/
+
+# CSS and CSS Maps
+*.css
+*.css.map
