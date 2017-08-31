@@ -21,6 +21,7 @@ module.exports = {
       {
         enforce: 'pre',
         test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
         include: APP_DIR,
         loader: 'eslint-loader',
       },
@@ -40,6 +41,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif|woff|woff2)$/,
+        exclude: /node_modules/,
         use: 'url-loader',
       },
     ],
