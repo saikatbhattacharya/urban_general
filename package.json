@@ -10,6 +10,7 @@
     "prebuild": "./node_modules/.bin/pm2 stop src/server/ecosystem.json",
     "build": "webpack -p --progress --colors",
     "serve": "./node_modules/.bin/pm2 startOrReload src/server/ecosystem.json && yarn logs",
+    "serve:docker": "./node_modules/.bin/pm2 startOrReload server/docker-ecosystem.json && yarn logs",
     "logs": "./node_modules/.bin/pm2 logs",
     "pretest": "rimraf coverage && eslint ./test/unit",
     "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha",

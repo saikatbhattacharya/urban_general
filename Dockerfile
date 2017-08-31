@@ -1,15 +1,18 @@
 FROM node:6-alpine
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
+COPY package.json yarn.lock /usr/src/app/
 COPY . /usr/src/app
 RUN yarn install \
     && yarn cache clean \
     && yarn test \
-    && yarn build
-    && mkdir /tmp
-    && mv -f package.json src/server /tmp/ \
-    && rm -rf *
-    && mv /tmp .
-    && rm -rf /tmp
-    && yarn install --prod
-CMD yarn serve
+    && yarn build \
+    && mkdir /tmp_app \
+    && mv -f package.json yarn.lock src/server /tmp_app/ \
+    && rm -rf * \
+    && mv -f /tmp_app/* . \
+    && rm -rf /tmp_app \
+    && yarn install --prod \
+    && mkdir logs \
+    && mkdir logs/pm2logs
+CMD yarn serve:docker
