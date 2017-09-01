@@ -1,4 +1,4 @@
-import actions from '../constants/actionTypes';
+import actions from 'constants/actionTypes';
 
 const defaultState = {
   value: 1,

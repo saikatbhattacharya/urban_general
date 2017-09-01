@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-require('../styles/app.scss');
+require('styles/app.scss');
 
 const App = props => (
   <div>

@@ -15,6 +15,16 @@ module.exports = {
       '.js',
       '.jsx',
     ],
+    alias: {
+      actions: path.resolve(__dirname, '../src/client/actions/'),
+      components: path.resolve(__dirname, '../src/client/components/'),
+      constants: path.resolve(__dirname, '../src/client/constants/'),
+      containers: path.resolve(__dirname, '../src/client/containers/'),
+      images: path.resolve(__dirname, '../src/client/images/'),
+      reducers: path.resolve(__dirname, '../src/client/reducers/'),
+      store: path.resolve(__dirname, '../src/client/store/'),
+      styles: path.resolve(__dirname, '../src/client/styles/'),
+    },
   },
   module: {
     rules: [

@@ -3,6 +3,6 @@
   "rules": {
     "indentation": ["tab", {
       "except": ["value"]
-    }],
+    }]
   }
 }

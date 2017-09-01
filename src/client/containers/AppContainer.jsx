@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import App from '../components/App';
-import actions from '../actions/actionCreators';
+import App from 'components/App';
+import actions from 'actions/actionCreators';
 
 const mapStateToProps = state => ({
   value: state.actionReducer.value,
