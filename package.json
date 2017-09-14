@@ -20,9 +20,10 @@
     "featuretest": "nightwatch"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/adarshannaiynar/urban_general"
   },
-  "author": "Mr. Cooper",
+  "author": "Adarsh",
   "license": "ISC",
   "dependencies": {
     "cross-env": "^5.0.1",

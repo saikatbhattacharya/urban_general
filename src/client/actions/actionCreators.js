@@ -8,13 +8,9 @@ const decrementAction = () => ({
   type: actions.DECREMENT,
 });
 
-const dispatchIncrement = () => {
-  return dispatch => dispatch(incrementAction());
-};
+const dispatchIncrement = () => dispatch => dispatch(incrementAction());
 
-const dispatchDecrement = () => {
-  return dispatch => dispatch(decrementAction());
-};
+const dispatchDecrement = () => dispatch => dispatch(decrementAction());
 
 export default {
   incrementAction,
