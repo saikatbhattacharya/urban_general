@@ -17,7 +17,8 @@
     "test:watch": "yarn test; chokidar './src/client/**/*.{js,jsx}' './test/unit/**/*.{js,jsx}' -c 'yarn test'",
     "selenium": "selenium-standalone install --config=./selenium.config.js",
     "prefeaturetest": "rimraf reports/* & rimraf logs/selenium-debug.log && yarn selenium",
-    "featuretest": "nightwatch"
+    "featuretest": "nightwatch",
+    "postfeaturetest": "node html-cucumber-reports.js"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,8 @@
     "chai": "^4.1.0",
     "chokidar-cli": "^1.2.0",
     "css-loader": "^0.28.4",
+    "cucumber": "^3.0.2",
+    "cucumber-html-reporter": "^3.0.1",
     "enzyme": "^2.9.1",
     "es6-promise": "^4.1.1",
     "eslint": "^3.19.0",
@@ -63,6 +66,7 @@
     "history": "^4.6.3",
     "mocha": "^3.4.2",
     "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^8.1.0",
     "node-sass": "^4.5.3",
     "nyc": "^11.1.0",
     "postcss": "^6.0.8",
