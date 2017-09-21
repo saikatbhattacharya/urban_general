@@ -1,15 +1,13 @@
 require('babel-core/register');
 
-require('nightwatch-cucumber')({
-  runner: 'nightwatch',
+module.exports = {
   cucumberArgs: [
     '--require',
     './test/feature/step_definitions',
+    '--format',
+    'json:reports/cucumber.json',
     './test/feature/features',
   ],
-});
-
-module.exports = {
   output_folder: 'reports',
   custom_commands_path: '',
   custom_assertions_path: '',
@@ -41,3 +39,5 @@ module.exports = {
   },
   live_output: true,
 };
+
+require('nightwatch-cucumber')(module.exports);
