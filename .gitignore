@@ -4,6 +4,7 @@ node_modules/
 # Logs
 logs/pm2logs/*.log
 logs/*.log
+*.log
 
 # Build directories
 src/server/dist/public/
