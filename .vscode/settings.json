@@ -1,37 +1,31 @@
 {
   "search.exclude": {
-    "# Library folders": true,
     "node_modules/": true,
-    "# Logs": true,
     "logs/pm2logs/*.log": true,
     "logs/*.log": true,
-    "# Build directories": true,
+    "*.log": true,
     "src/server/dist/public/": true,
-    "# Coverage": true,
     "coverage/": true,
-    "# Reports": true,
     "reports/": true,
-    "# Test cache": true,
     ".nyc_output/": true,
-    "# Webstorm": true,
-    ".idea/": true
+    ".idea/": true,
+    "*.css": true,
+    "*.css.map": true,
+    ".DS_Store": true
   },
   "files.exclude": {
-    "# Library folders": true,
     "node_modules/": true,
-    "# Logs": true,
     "logs/pm2logs/*.log": true,
     "logs/*.log": true,
-    "# Build directories": true,
+    "*.log": true,
     "src/server/dist/public/": true,
-    "# Coverage": true,
     "coverage/": true,
-    "# Reports": true,
     "reports/": true,
-    "# Test cache": true,
     ".nyc_output/": true,
-    "# Webstorm": true,
-    ".idea/": true
+    ".idea/": true,
+    "*.css": true,
+    "*.css.map": true,
+    ".DS_Store": true
   },
   "[javascript]": {
     "editor.insertSpaces": true,

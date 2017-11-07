@@ -24,3 +24,6 @@ reports/
 # CSS and CSS Maps
 *.css
 *.css.map
+
+# Mac
+.DS_Store
