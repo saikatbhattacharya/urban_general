@@ -1,14 +1,21 @@
 {
 	"extends": "airbnb",
 	"plugins": [
-			"react",
-			"jsx-a11y",
-			"import"
+		"react",
+		"jsx-a11y",
+		"import"
 	],
 	"env": {
 		"mocha": true
 	},
 	"rules": {
 		"no-unused-expressions": "off"
+	},
+	"settings" : {
+		"import/resolver": {
+			"webpack": {
+				"config": "webpack.config.js"
+			}
+		}
 	}
 }
