@@ -7,7 +7,7 @@ const baseConfig = require('./base');
 
 const PORT = process.env.PORT || 5000;
 
-const APP_DIR = path.resolve(__dirname, '../src/client/src');
+const APP_DIR = path.resolve(__dirname, '../src/client');
 
 const config = _.merge({
   devServer: {
@@ -35,7 +35,22 @@ const config = _.merge({
 config.module.rules.push({
   test: /\.(js|jsx)$/,
   use: ['babel-loader'],
+  exclude: /node_modules/,
   include: APP_DIR,
+});
+
+config.module.rules.push({
+  test: /\.(png|jpg|gif|ico|xml)$/,
+  exclude: /node_modules/,
+  use: [
+    {
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]',
+        publicPath: 'http://localhost:8100/public/icons/',
+      },
+    },
+  ],
 });
 
 config.plugins = [].concat(baseConfig.plugins, [

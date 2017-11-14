@@ -1,0 +1,24 @@
+{
+	"apps": [
+		{
+			"name": "boilerplate",
+			"script": "server/index.js",
+			"watch": true,
+			"instances": 4,
+			"ignore_watch": [
+				"logs",
+				"node_modules",
+				".tmp",
+				".idea",
+				".vagrant",
+				".git"
+			],
+			"env": {
+				"DEBUG": "fetch:*"
+			},
+			"log_file": "./logs/pm2logs/boilerplate.log",
+			"out_file": "./logs/pm2logs/boilerplate_out.log",
+			"err_file": "./logs/pm2logs/boilerplate_error.log"
+		}
+	]
+}

@@ -3,6 +3,8 @@ node_modules/
 
 # Logs
 logs/pm2logs/*.log
+logs/*.log
+*.log
 
 # Build directories
 src/server/dist/public/
@@ -10,5 +12,18 @@ src/server/dist/public/
 # Coverage
 coverage/
 
+# Reports
+reports/
+
 # Test cache
 .nyc_output/
+
+# Webstorm
+.idea/
+
+# CSS and CSS Maps
+*.css
+*.css.map
+
+# Mac
+.DS_Store

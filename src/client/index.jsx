@@ -1,4 +1,3 @@
-/* eslint no-undef: 0 */
 /* eslint global-require: 0 */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -6,10 +5,11 @@ import { Router, Route } from 'react-router';
 import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
 import createBrowserHistory from 'history/createBrowserHistory';
-import ApplicationContainer from './containers/AppContainer';
-import configureStore from './store';
+import ApplicationContainer from 'containers/AppContainer';
+import configureStore from 'store';
 
 require('es6-promise').polyfill();
+require('images/icons');
 
 const history = createBrowserHistory();
 

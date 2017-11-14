@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": true
+    }]
+  },
+  "settings" : {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  }
+}

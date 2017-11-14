@@ -1,29 +1,37 @@
 {
   "search.exclude": {
-    "# Library folders": true,
     "node_modules/": true,
-    "# Logs": true,
     "logs/pm2logs/*.log": true,
-    "# Build directories": true,
+    "logs/*.log": true,
+    "*.log": true,
     "src/server/dist/public/": true,
-    "# Coverage": true,
     "coverage/": true,
-    "# Test cache": true,
-    ".nyc_output/": true
+    "reports/": true,
+    ".nyc_output/": true,
+    ".idea/": true,
+    "*.css": true,
+    "*.css.map": true,
+    ".DS_Store": true
   },
   "files.exclude": {
-    "# Library folders": true,
     "node_modules/": true,
-    "# Logs": true,
     "logs/pm2logs/*.log": true,
-    "# Build directories": true,
+    "logs/*.log": true,
+    "*.log": true,
     "src/server/dist/public/": true,
-    "# Coverage": true,
     "coverage/": true,
-    "# Test cache": true,
-    ".nyc_output/": true
+    "reports/": true,
+    ".nyc_output/": true,
+    ".idea/": true,
+    "*.css": true,
+    "*.css.map": true,
+    ".DS_Store": true
   },
   "[javascript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
